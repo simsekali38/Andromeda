@@ -1,0 +1,173 @@
+html,
+body {
+    background: #eef0f7;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+div.container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: -85px;
+    overflow: hidden;
+}
+
+div.container .main-bg {
+    background: #fff;
+    position: relative;
+    width: 100%;
+    max-width: 942px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+div.container .main {
+    display: block;
+    width: 100%;
+}
+
+div.container .main .fa-times {
+    background: #fff;
+    position: absolute;
+    box-shadow: 0px 11px 20px -6px rgba(70, 93, 169, 0.13);
+    top: -20px;
+    right: -20px;
+    display: block;
+    padding: 20px;
+    font-size: 30px;
+    line-height: 18px;
+    color: #757070;
+    border-radius: 50%;
+}
+
+div.container .main .fa-times:hover {
+    background: rgb(192, 192, 192);
+}
+
+div.container .main-bg:before {
+    content: '';
+    z-index: -3;
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    top: -40%;
+    left: -20%;
+    width: 1333px;
+    height: 1333px;
+    background: rgb(252, 212, 117);
+    background: linear-gradient(300deg, rgba(252, 212, 117, 1) 0%, rgba(255, 153, 205, 1) 100%);
+}
+
+div.container .content {
+    position: relative;
+    z-index: 99;
+    display: flex;
+    flex-direction: row;
+}
+
+div.container .content .right {
+    padding-left: 50px;
+}
+
+div.container div img {
+    width: 432px;
+    height: 656px;
+    object-fit: cover;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+div.container div h1 {
+    padding: 30px 0 0 0;
+    color: #1A2250;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 41px;
+}
+
+div.container div p {
+    color: #1A2250;
+    font-family: Montserrat;
+    font-size: 22.000002px;
+    font-weight: 500;
+    line-height: 34.600002px;
+    display: block;
+    padding-bottom: 30px;
+    padding-right: 25px;
+}
+
+div.container div span {
+    display: block;
+    padding: 20px;
+    text-align: center;
+    color: #1a2250;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 23.800001px;
+    opacity: 0.5;
+}
+
+div.container div form {
+    display: flex;
+    flex-direction: column;
+}
+
+div.container div form input {
+    border: 2px solid #d8dceb;
+    border-radius: 5px;
+    padding: 25px;
+    font-size: 22px;
+    color: #1a2250;
+    font-weight: 500;
+    line-height: 27px;
+    margin-bottom: 18px;
+    opacity: 0.6;
+}
+
+div.container div form button {
+    border: 0;
+    font-size: 24px;
+    color: #fff;
+    font-family: Montserrat;
+    font-weight: 600;
+    line-height: 29px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 24px 30px -18px rgba(108, 157, 243, 0.6);
+    padding: 25px;
+    background: linear-gradient(148deg, rgba(137, 202, 255, 1) 0%, rgba(101, 137, 255, 1) 100%);
+}
+
+@media only screen and (max-width: 900px) {
+    div.container {
+        position: relative;
+        padding: 20px;
+    }
+    div.container .main {
+        background: #fff;
+    }
+    div.container .content {
+        flex-direction: column;
+    }
+    div.container .content img {
+        width: 100%;
+        height: 200px;
+    }
+    div.container .content .right {
+        padding: 10px;
+    }
+}

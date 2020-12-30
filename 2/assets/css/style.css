@@ -1,0 +1,170 @@
+html,
+body {
+    background: #faf9ff;
+    padding: 0;
+    margin: 0;
+    font-family: 'Muli';
+    color: rgb(15, 15, 43);
+}
+
+div.container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    overflow: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+div.container .bg-main {
+    display: block;
+    margin: 0 auto;
+    background: #f4f6fe;
+    padding: 8% 6%;
+    width: 100%;
+    max-width: 902px;
+}
+
+div.container .bg-main .box {
+    box-shadow: 0px 18px 40px -20px rgba(20, 26, 133, 0.2);
+}
+
+div.container .bg-main .main {
+    display: block;
+    max-width: 662px;
+    width: 100%;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 15px;
+}
+
+div.container .bg-main .main .search {
+    padding: 20px 40px;
+    border-bottom: 1px solid #e7e7e9;
+}
+
+div.container .bg-main .main .search .form {
+    display: flex;
+    flex-direction: row;
+}
+
+div.container .bg-main .main .search .form * {
+    border: 0;
+    background: transparent;
+    font-size: 24px;
+    padding: 15px;
+    outline: none;
+    color: #202842;
+}
+
+div.container .bg-main .main .search .form button {
+    color: #666;
+}
+
+div.container .bg-main .main .search .form input {
+    flex: 1;
+    font-size: 18px;
+}
+
+div.container .bg-main .main .content {
+    padding: 20px 50px;
+}
+
+div.container .bg-main .main .content div h1 {
+    opacity: 0.4;
+    display: block;
+    color: #202842;
+    font-family: "Muli-Regular";
+    font-size: 18px;
+}
+
+div.container .bg-main .main .content div ul#trending {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+div.container .bg-main .main .content div ul#trending li {
+    display: inline-block;
+}
+
+div.container .bg-main .main .content div ul#trending li.kirmizi a {
+    background: #f9effa;
+}
+
+div.container .bg-main .main .content div ul#trending li.yesil a {
+    background: #e6f6f2;
+}
+
+div.container .bg-main .main .content div ul#trending li.pembe a {
+    background: #f4f3fd;
+}
+
+div.container .bg-main .main .content div ul#trending li a {
+    display: block;
+    margin: 3px;
+    padding: 10px 15px;
+    font-size: 14px;
+    text-decoration: none;
+    background: #ccc;
+    color: #1c1d37;
+    border-radius: 4px;
+}
+
+div.container .bg-main .main .content div ul#trending li a * {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+}
+
+div.container .bg-main .main .content div ul#trending li a i {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+div.container .bg-main .main .content div ul#recent {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+div.container .bg-main .main .content div ul#recent li a {
+    display: block;
+    margin: 3px;
+    padding: 15px 20px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #1c1d37;
+    border-radius: 5px;
+}
+
+div.container .bg-main .main .content div ul#recent li a:hover {
+    background: #ebeaf3;
+}
+
+div.container .bg-main .main .content div ul#recent li a * {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+}
+
+div.container .bg-main .main .content div ul#recent li a i {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+div.container .bg-main .main .content div ul#recent li a span.sil {
+    float: right;
+    font-size: 16px;
+    color: rgb(102, 102, 102);
+    display: none;
+}
+
+div.container .bg-main .main .content div ul#recent li a:hover>span.sil {
+    display: block;
+    padding-top: 5px;
+}
